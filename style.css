@@ -15,3 +15,13 @@
 .fa-linkedin:hover {
     color: rgb(77, 77, 255);
 }
+
+.banner {
+    background-image: url(https://c.wallhere.com/photos/43/3b/black_dark_abstract_3D_shards_glass_red-22194.jpg!d);
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid gray;
+    margin: 5px 5px 0 5px;
+    background-size: cover;
+}
