@@ -1,8 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbar {
     padding: 0px;
 }
 
-.container-fluid {
+.container-1 {
     border-bottom: 2px solid crimson;
 }
 
@@ -21,7 +27,24 @@
     height: 200px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border: 1px solid gray;
     margin: 5px 5px 0 5px;
     background-size: cover;
+    border-top: 1px solid crimson;
+    border-left: 1px solid crimson;
+    border-right: 1px solid crimson;
+}
+
+.about-us {
+    border-bottom: 1px solid crimson;
+    border-left: 1px solid crimson;
+    border-right: 1px solid crimson;
+    margin: 0 5px;
+    height: 250px;
+    padding: 5px 5px;
+}
+
+.profile,
+.information {
+    border: 1px solid blue;
+    height: 190px;
 }
