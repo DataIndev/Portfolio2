@@ -39,16 +39,48 @@
     border-left: 1px solid crimson;
     border-right: 1px solid crimson;
     margin: 0 5px;
-    height: 250px;
+    height: auto;
     padding: 5px 5px;
 }
 
-.profile {}
+.contenedor {}
 
-.information {}
+.profile {
+    margin: 5px 70px 10px 70px;
+    background-color: blue;
+}
+
+.information {
+    background-color: red;
+}
 
 .profile,
 .information {
-    border: 1px solid blue;
+    color: white;
+    border: 2px solid green;
     height: 190px;
+    padding: 5px;
+}
+
+.img-avatar {
+    height: 150px;
+    width: 150px;
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        display: flex;
+        justify-content: center;
+    }
+    .profile {
+        display: flex;
+        margin: 0;
+        width: 20%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .information {
+        width: 80%;
+    }
 }
