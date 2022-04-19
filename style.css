@@ -17,6 +17,10 @@
     font-size: medium;
 }
 
+.navbar-toggler {
+    margin-bottom: 5px;
+}
+
 .fa-facebook:hover,
 .fa-linkedin:hover {
     color: rgb(77, 77, 255);
@@ -24,47 +28,63 @@
 
 .banner {
     background-image: url(https://c.wallhere.com/photos/43/3b/black_dark_abstract_3D_shards_glass_red-22194.jpg!d);
-    height: 200px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    height: 250px;
     margin: 5px 5px 0 5px;
     background-size: cover;
-    border-top: 1px solid crimson;
-    border-left: 1px solid crimson;
-    border-right: 1px solid crimson;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 2px solid crimson;
+    border-left: 2px solid crimson;
+    border-right: 2px solid crimson;
 }
 
 .about-us {
-    border-bottom: 1px solid crimson;
-    border-left: 1px solid crimson;
-    border-right: 1px solid crimson;
-    margin: 0 5px;
+    border-bottom: 2px solid crimson;
+    border-left: 2px solid crimson;
+    border-right: 2px solid crimson;
+    margin: 0 5px 20px 5px;
     height: auto;
     padding: 5px 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
-
-.contenedor {}
 
 .profile {
     margin: 5px 70px 10px 70px;
-    background-color: blue;
-}
-
-.information {
-    background-color: red;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 .profile,
 .information {
-    color: white;
-    border: 2px solid green;
-    height: 190px;
+    color: black;
+    height: auto;
     padding: 5px;
 }
 
+.avatar {
+    margin-top: 10px;
+}
+
 .img-avatar {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
+}
+
+.name p {
+    text-align: center;
+    margin: 2px 0;
+}
+
+.experience,
+.education {
+    height: auto;
+    width: auto;
+    border: 2px solid gray;
+    margin: 0px 5px 20px 5px;
+    border-radius: 20px;
+    padding: 5px;
 }
 
 @media (min-width: 768px) {
@@ -82,5 +102,6 @@
     }
     .information {
         width: 80%;
+        border-left: 5px double gray;
     }
 }
