@@ -68,8 +68,8 @@
 }
 
 .img-avatar {
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
 }
 
 .name p {
@@ -78,16 +78,78 @@
 }
 
 .experience,
-.education {
+.education,
+.hard-soft-skills {
     height: auto;
     width: auto;
     border: 2px solid gray;
     margin: 0px 5px 20px 5px;
     border-radius: 20px;
-    padding: 5px;
+    padding: 0 20px;
 }
 
+.hard-soft-skills {
+    display: flex;
+    align-content: center;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.skills {
+    height: auto;
+    width: auto;
+    border: 1px solid orange;
+    margin: 2% 5%;
+    padding: 10px;
+}
+
+@keyframes growProgressBar {
+    0%,
+    33% {
+        --pgPercentage: 0;
+    }
+    100% {
+        --pgPercentage: var(--value);
+    }
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+
+div[role="progressbar"] {
+    --size: 8rem;
+    --fg: rgb(28, 90, 223);
+    --cl: rgb(51, 49, 49);
+    --bg: rgb(204, 205, 209);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0), conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--cl);
+}
+
+div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+
+/*=========MEDIAS===========*/
+
 @media (min-width: 768px) {
+    body {
+        background-color: beige;
+    }
     .contenedor {
         display: flex;
         justify-content: center;
@@ -95,13 +157,21 @@
     .profile {
         display: flex;
         margin: 0;
-        width: 20%;
+        width: 25%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .information {
-        width: 80%;
+        width: 75%;
         border-left: 5px double gray;
+    }
+    .hard-soft-skills {
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    .skills {
+        margin: 2% 2%;
     }
 }
