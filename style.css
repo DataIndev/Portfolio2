@@ -6,6 +6,10 @@
 
 .navbar {
     padding: 0px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .container-1 {
@@ -29,7 +33,7 @@
 .banner {
     background-image: url(https://c.wallhere.com/photos/43/3b/black_dark_abstract_3D_shards_glass_red-22194.jpg!d);
     height: 250px;
-    margin: 5px 5px 0 5px;
+    margin: 55px 5px 0 5px;
     background-size: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -88,7 +92,9 @@
     padding: 0 20px;
 }
 
-.hard-soft-skills {
+.hard-soft-skills {}
+
+.box-skills {
     display: flex;
     align-content: center;
     flex-flow: row wrap;
