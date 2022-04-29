@@ -151,6 +151,62 @@ div[role="progressbar"]::before {
     content: counter(percentage) '%';
 }
 
+.footer1 {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    background: #333333;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px 100px;
+    row-gap: 5px;
+}
+
+.box1 {
+    width: 100%;
+    height: auto;
+    min-height: 80px;
+    background: #333333;
+    border: 1px solid #FF6060;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-redes {
+    margin: 5px 0;
+    border: 1px solid #FF6060;
+    width: 30%;
+}
+
+.box-left,
+.box-right {
+    color: white;
+    align-self: flex-end;
+}
+
+.box-mid {
+    display: flex;
+    justify-content: center;
+}
+
+.box-mid ul {
+    border: 1px solid crimson;
+}
+
+.box-mid ul li {
+    border: 1px solid yellow;
+    list-style: none;
+    text-align: center;
+}
+
+.box2 {
+    width: 100%;
+    height: auto;
+    min-height: 140px;
+    background: #333333;
+    border: 1px solid #FF6060;
+}
+
 
 /*=========MEDIAS===========*/
 
