@@ -25,11 +25,6 @@
     margin-bottom: 5px;
 }
 
-.fa-facebook:hover,
-.fa-linkedin:hover {
-    color: rgb(77, 77, 255);
-}
-
 .banner {
     background-image: url(https://c.wallhere.com/photos/43/3b/black_dark_abstract_3D_shards_glass_red-22194.jpg!d);
     height: 250px;
@@ -186,17 +181,12 @@ div[role="progressbar"]::before {
 
 .box-mid {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.box-mid ul {
-    border: 1px solid crimson;
-}
-
-.box-mid ul li {
-    border: 1px solid yellow;
-    list-style: none;
-    text-align: center;
+.link-redes {
+    color: rgb(27, 26, 26);
 }
 
 .box2 {
