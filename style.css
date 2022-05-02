@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-color: #212529;
+}
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 .navbar {
     padding: 0px;
     overflow: hidden;
@@ -26,7 +36,8 @@
 }
 
 .banner {
-    background-image: url(https://c.wallhere.com/photos/43/3b/black_dark_abstract_3D_shards_glass_red-22194.jpg!d);
+    background-color: var(--main-color);
+    /* background-image: url(https://c.wallhere.com/photos/43/3b/black_dark_abstract_3D_shards_glass_red-22194.jpg!d); */
     height: 250px;
     margin: 55px 5px 0 5px;
     background-size: cover;
@@ -57,7 +68,6 @@
 
 .profile,
 .information {
-    color: black;
     height: auto;
     padding: 5px;
 }
@@ -80,16 +90,25 @@
 
 .experience,
 .education,
-.hard-soft-skills {
+.hard-soft-skills,
+.projects {
     height: auto;
     width: auto;
-    border: 2px solid gray;
-    margin: 10px 5px;
+    border: 1px solid gray;
+    margin: 30px 5px;
     border-radius: 20px;
-    padding: 0 20px;
+    padding: 20px 20px;
 }
 
-.hard-soft-skills {}
+.experience {
+    background: var(--main-color);
+    color: white;
+}
+
+.hard-soft-skills {
+    background: var(--main-color);
+    color: white;
+}
 
 .box-skills {
     display: flex;
@@ -102,7 +121,7 @@
 .skills {
     height: auto;
     width: auto;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     margin: 2% 5%;
     padding: 10px;
 }
@@ -125,8 +144,8 @@
 
 div[role="progressbar"] {
     --size: 8rem;
-    --fg: rgb(28, 90, 223);
-    --cl: rgb(51, 49, 49);
+    --fg: rgb(98, 101, 105);
+    --cl: rgb(100, 96, 96);
     --bg: rgb(204, 205, 209);
     --pgPercentage: var(--value);
     animation: growProgressBar 3s 1 forwards;
@@ -146,14 +165,49 @@ div[role="progressbar"]::before {
     content: counter(percentage) '%';
 }
 
+.projects {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.box-p {
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    margin: 10px 0;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.box-p-img {
+    height: auto;
+    width: 25%;
+    min-height: 100px;
+    border: 1px solid blue;
+    background-image: url(http://iaphare.org/wp-content/uploads/2018/11/Project-BG-2005.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-p-text {
+    height: auto;
+    width: 90%;
+    border: 1px solid darkgreen;
+}
+
 .footer1 {
     width: 100%;
     height: auto;
     min-height: 200px;
-    background: #333333;
+    background: var(--main-color);
     display: flex;
     flex-flow: column nowrap;
-    padding: 10px 100px;
+    padding: 5px 25px;
     row-gap: 5px;
 }
 
@@ -161,16 +215,22 @@ div[role="progressbar"]::before {
     width: 100%;
     height: auto;
     min-height: 80px;
-    background: #333333;
-    border: 1px solid #FF6060;
     display: flex;
     justify-content: space-evenly;
 }
 
 .box-redes {
     margin: 5px 0;
-    border: 1px solid #FF6060;
-    width: 30%;
+    min-width: 30%;
+    width: auto;
+}
+
+.fa-brands {
+    color: white;
+}
+
+.fa-brands:hover {
+    color: #183153;
 }
 
 .box-left,
@@ -187,23 +247,33 @@ div[role="progressbar"]::before {
 
 .link-redes {
     color: rgb(27, 26, 26);
+    margin: 0 2px;
 }
 
 .box2 {
+    display: flex;
+    color: white;
     width: 100%;
     height: auto;
-    min-height: 140px;
-    background: #333333;
-    border: 1px solid #FF6060;
+    min-height: 110px;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column wrap;
+    font-size: 1.15rem;
+}
+
+.box2 a {
+    margin: 0 5px;
+}
+
+.box2-int2 {
+    margin: 5px 0;
 }
 
 
 /*=========MEDIAS===========*/
 
 @media (min-width: 768px) {
-    body {
-        background-color: beige;
-    }
     .contenedor {
         display: flex;
         justify-content: center;
@@ -227,5 +297,23 @@ div[role="progressbar"]::before {
     }
     .skills {
         margin: 2% 2%;
+    }
+    .box-p {
+        flex-flow: row nowrap;
+    }
+    .box-p-img {
+        width: 10%;
+    }
+    .footer1 {
+        padding: 10px 100px;
+    }
+    .box2 {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .box2-int2 {
+        display: flex;
+        flex-flow: row nowrap;
     }
 }

@@ -9,7 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/da78769627.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles/dist/tsparticles.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,7 +22,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky">
             <div class="container-fluid container-1">
                 <a class="navbar-brand" href="#">
-                    <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1648503444/APLogo-20-20.png" alt="" width="60" height="48" class="d-inline-block "> Argentina Programa - #YoPrograma
+                    <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1648503444/APLogo-20-20.png" alt="" width="60" height="48" class="d-inline-block "> Argentina Programa - #YoProgramo
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -43,7 +45,7 @@
             </div>
         </nav>
         <!-- BANNER PROFILE SECTION-->
-        <div class="banner img-fluid"></div>
+        <div class="banner img-fluid particles-js" id="particles-js"></div>
 
         <div class="about-us">
             <!-- Profile & Avatar -->
@@ -140,7 +142,45 @@
         </section>
 
         <!-- PROJECTS SECTION -->
-        <section class="projects"></section>
+        <section class="projects">
+            <h4>Projects</h4>
+            <hr>
+
+            <div class="project-1 box-p">
+                <div class="box-p-img"></div>
+                <div class="box-p-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iusto doloremque harum numquam delectus magnam incidunt odio labore! Commodi, ratione, ullam ipsa ipsum enim similique libero deserunt, et qui voluptate sequi aut explicabo
+                        minima a ab recusandae. Fugiat architecto vero dolore recusandae totam ullam sit minus quae sed laboriosam dolor quaerat aspernatur tempore velit voluptate consectetur eligendi, doloribus repellendus sequi!</p>
+                </div>
+            </div>
+
+            <div class="project-2 box-p">
+                <div class="box-p-img"></div>
+                <div class="box-p-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor enim mollitia itaque doloremque! Illum natus ullam explicabo commodi minima temporibus magni distinctio accusamus dolor inventore saepe facilis veniam excepturi quasi in
+                        repudiandae rerum blanditiis debitis, obcaecati architecto nesciunt odit mollitia alias consequuntur? Ad adipisci amet ratione sint praesentium, voluptatibus velit temporibus! Rem, reiciendis itaque omnis deleniti odit repellendus
+                        nisi? Autem, dolore illo blanditiis doloribus vel, totam rem eligendi fugit deleniti accusantium laudantium suscipit explicabo voluptatum natus! Libero quas quae similique?</p>
+                </div>
+            </div>
+
+            <div class="project-3 box-p">
+                <div class="box-p-img"></div>
+                <div class="box-p-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error explicabo vitae ipsa aliquam amet itaque eum blanditiis nostrum id, modi ad sapiente? Deserunt quam harum minus quod, nisi sequi delectus temporibus ea omnis!
+                        Dolore corrupti minima itaque nobis similique nulla distinctio excepturi pariatur, ipsa dolores modi ad consequuntur voluptatibus illum corporis fuga officia obcaecati ex. Similique, voluptatem voluptate ea vel libero placeat delectus
+                        nostrum harum sed optio, ducimus asperiores.</p>
+                </div>
+            </div>
+
+            <div class="project-4 box-p">
+                <div class="box-p-img"></div>
+                <div class="box-p-text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem beatae inventore porro quos est? Sed deleniti culpa architecto voluptatum esse odit eum cumque quisquam vero, accusamus quidem inventore, voluptas ratione amet
+                        repellat? Blanditiis omnis amet culpa praesentium totam aliquid earum in perspiciatis? Deserunt voluptatem aut cum officia vel officiis qui molestiae totam architecto, alias, itaque ex consequatur sapiente minus necessitatibus!</p>
+                </div>
+            </div>
+
+        </section>
 
 
     </main>
@@ -151,7 +191,7 @@
 
                 <div class="box-redes box-mid">
 
-                    <a href="" class="link-redes"><i class="fa-brands fa-facebook fa-2xl" ></i>
+                    <a href="" class="link-redes"><i class="fa-brands fa-facebook fa-2xl"></i>
                     </a>
                     <a href="" class="link-redes"><i class="fa-brands fa-instagram fa-2xl"></i>
                     </a>
@@ -166,11 +206,34 @@
                 </div>
 
             </div>
-            <div class="box2"></div>
+            <div class="box2">
+                <div class="box2-in1t">
+                    <p>&copy; 2022 Benjamín Aráoz</p>
+                </div>
+
+                <div class="box2-int2">
+
+                    <div><a href="tel:+5493813930019"><i class="fa-solid fa-phone-flip"></i></a><span> (+54)
+                            93813930019</span></div>
+
+                    <div><a href="mailto:admin@dataindev.com"><i class="fa-solid fa-envelope"></i></a><span>admin@dataindev.com</span>
+                    </div>
+
+                    <div>
+                        <a href="https://goo.gl/maps/w7UtrKjynATgf11U8" target="_blank"><i
+                                class="fa-solid fa-location-pin"></i></i></a><span> Tucumán - Argentina</span>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     </footer>
 
-    <script src="main.js"></script>
+
+
+    <script src="main.js "></script>
+    <script src=" https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js "></script>
 
 </body>
 
