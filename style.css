@@ -14,6 +14,11 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+h4 {
+    color: crimson;
+    font-weight: 700;
+}
+
 .navbar {
     padding: 0px;
     overflow: hidden;
@@ -37,26 +42,25 @@ body {
 
 .banner {
     background-color: var(--main-color);
-    /* background-image: url(https://c.wallhere.com/photos/43/3b/black_dark_abstract_3D_shards_glass_red-22194.jpg!d); */
     height: 250px;
     margin: 55px 5px 0 5px;
     background-size: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-top: 2px solid crimson;
-    border-left: 2px solid crimson;
-    border-right: 2px solid crimson;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 1px solid crimson;
+    border-left: 1px solid crimson;
+    border-right: 1px solid crimson;
 }
 
 .about-us {
-    border-bottom: 2px solid crimson;
-    border-left: 2px solid crimson;
-    border-right: 2px solid crimson;
+    border-bottom: 1px solid crimson;
+    border-left: 1px solid crimson;
+    border-right: 1px solid crimson;
     margin: 0 5px 20px 5px;
     height: auto;
     padding: 5px 5px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .profile {
@@ -96,8 +100,9 @@ body {
     width: auto;
     border: 1px solid gray;
     margin: 30px 5px;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 20px 20px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .experience {
@@ -182,13 +187,13 @@ div[role="progressbar"]::before {
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .box-p-img {
     height: auto;
     width: 25%;
     min-height: 100px;
-    border: 1px solid blue;
     background-image: url(http://iaphare.org/wp-content/uploads/2018/11/Project-BG-2005.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -197,7 +202,6 @@ div[role="progressbar"]::before {
 .box-p-text {
     height: auto;
     width: 90%;
-    border: 1px solid darkgreen;
 }
 
 .footer1 {
@@ -230,7 +234,7 @@ div[role="progressbar"]::before {
 }
 
 .fa-brands:hover {
-    color: #183153;
+    color: #0D6EFD;
 }
 
 .box-left,
@@ -315,5 +319,6 @@ div[role="progressbar"]::before {
     .box2-int2 {
         display: flex;
         flex-flow: row nowrap;
+        column-gap: 15px;
     }
 }
